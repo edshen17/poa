@@ -1,0 +1,14 @@
+
+
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav nav-item nav-link {
+  padding-right: 20px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
