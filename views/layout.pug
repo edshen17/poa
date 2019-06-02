@@ -17,18 +17,43 @@ html(lang='en')
           a.nav-item.nav-link.active(href='/')
             | Home 
             span.sr-only (current)
-          a.nav-item.nav-link(href='#') About Us
-          a.nav-item.nav-link(href='#') Extra Cirriculum Program
-          a.nav-item.nav-link(href='#') Visit a School
-          a.nav-item.nav-link(href='#') Admissions
-          a.nav-item.nav-link(href='#') Parents
-          a.nav-item.nav-link(href='#') Pricing
+          a.nav-item.nav-link(href='/about-us') About Us
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Day Care Program
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='#') Infant Program
+              a.dropdown-item(href='#') Toddler Program
+              a.dropdown-item(href='#') Nursery Program
+              a.dropdown-item(href='#') Preschool Program
+              a.dropdown-item(href='#') Pre-K Program 
+              a.dropdown-item(href='#') After School Program
+              a.dropdown-item(href='#') Summer Camp
+
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              | Extra Curriculum Program
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='#') Mandarin Program
+              a.dropdown-item(href='#') Weekend Program
+              a.dropdown-item(href='#') Music Program
+              a.dropdown-item(href='#') Art Program
+              a.dropdown-item(href='#') Dance Program
+              a.dropdown-item(href='#') Sports Program
+              a.dropdown-item(href='#') Gifted &amp; Talented
+          a.nav-item.nav-link(href='/visit-a-school') Visit a School
+          a.nav-item.nav-link(href='/admissions') Admissions
+          a.nav-item.nav-link(href='/parents') Parents
+          a.nav-item.nav-link(href='/careers') Careers
+          
           
     block content  
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js', integrity='sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4', crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', integrity='sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1', crossorigin='anonymous')  
-
+    script(src='https://kit.fontawesome.com/b32a134ddc.js')
 footer
   hr
-  p 	&copy; Edwin Shen 2019 
+  span(style='font-size: 48px; color: Dodgerblue;')
+    i.fab.fa-facebook-square
+  p 	&copy; 2009-2019 Preschool of America. All Rights Reserved.
