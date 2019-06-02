@@ -1,43 +1,42 @@
 extends layout
 
 block content
-  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+  #carouselIndicators.carousel.slide(data-ride='carousel')
     ol.carousel-indicators
       li.active(data-target='#slides', data-slide-to='0', data-interval='7000')
       li(data-target='#slides', data-slide-to='1', data-interval='7000')
       li(data-target='#slides', data-slide-to='2', data-interval='7000')
     .carousel-inner
       .carousel-item.active
-        img.d-block.w-100(src='https://images.unsplash.com/photo-1554470776-e7600bc66e10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80', alt='First slide')
-        .carousel-caption
-          h1.display-2 Preschool of America
+        img.d-block.w-100(src='https://images.theconversation.com/files/200634/original/file-20180102-26160-pto2rw.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip', alt='First slide')
+        //- .carousel-caption
+        //-   h1.display-2 Preschool of America
       .carousel-item
-        img.d-block.w-100(src='https://images.unsplash.com/photo-1554470776-e7600bc66e10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80', alt='Second slide')
+        img.d-block.w-100(src='/images/background2.png', alt='Second slide')
       .carousel-item
-        img.d-block.w-100(src='https://images.unsplash.com/photo-1554470776-e7600bc66e10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1932&q=80', alt='Third slide')
-      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        img.d-block.w-100(src='/images/background3.png')
+      a.carousel-control-prev(href='#carouselIndicators', role='button', data-slide='prev')
         span.carousel-control-prev-icon(aria-hidden='true')
         span.sr-only Previous
-      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+      a.carousel-control-next(href='#carouselIndicators', role='button', data-slide='next')
         span.carousel-control-next-icon(aria-hidden='true')
         span.sr-only Next
 
     .container.pt-4.px-4
     .row
       .col-lg.mx-5
-          h3.mb-4 Welcome to Preschool of America
-          p.mb-2  Welcome to the web site of Preschool of America, one of happiest, friendliest places in New York City for families with children from three months to six years old. At Preschool of America we strive to make every day a learning day, filled with new and wonderful experiences to help young learners find what interests and inspires them. <br/>
-          p.mb-2 It is our joy and pleasure to help families find just the right early education setting for their children and we’re sure it’s here with us, in a safe and comfortable place where learning is full of fun. <br/>
-          p.mb-2 We are the largest preschool program in the New York City, and our size reflects our experience: over 20 years of outstanding childhood education research and practical application to create the best possible setting for children (and families) with big hopes, dreams, and ideas. <br/>
-          p.mb-2 We created our Preschool of America website as a communication channel between home and school. Our website will be updated periodically to keep current and prospective families informed of our services and any new programs that will be offered in the future. The services and programs that we provide are unique in the way that they are researched, implemented, and taught in our schools all in a caring and child-friendly environment. With programs for infants through elementary school students, Preschool of America has something for every family.
+          h1.mb-4 Welcome to Preschool of America
+          p.mb-3  Welcome to the web site of Preschool of America, one of happiest, friendliest places in New York City for families with children from three months to six years old. At Preschool of America we strive to make every day a learning day, filled with new and wonderful experiences to help young learners find what interests and inspires them. <br/>
+          p.mb-3 It is our joy and pleasure to help families find just the right early education setting for their children and we’re sure it’s here with us, in a safe and comfortable place where learning is full of fun. <br/>
+          p.mb-3 We are the largest preschool program in the New York City, and our size reflects our experience: over 20 years of outstanding childhood education research and practical application to create the best possible setting for children (and families) with big hopes, dreams, and ideas. <br/>
+          p.mb-3 We created our Preschool of America website as a communication channel between home and school. Our website will be updated periodically to keep current and prospective families informed of our services and any new programs that will be offered in the future. The services and programs that we provide are unique in the way that they are researched, implemented, and taught in our schools all in a caring and child-friendly environment. With programs for infants through elementary school students, Preschool of America has something for every family.
       .col-lg.mx-5
-        h3.mb-4 News and Announcements
-        p.mb-2 
-          | Filler for now
+        h2.mb-4 News and Announcements
+        p.mb-2  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           
-        h3.mb-4 Click to find a Preschool of America near you
-        P
-          | Filler for now
+        h2.mt-4 Click to find a Preschool of America near you
+        P.mb-2
+          img#test.d-block.w-100(src='/images/map.png')
     
   
   
