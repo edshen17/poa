@@ -11,6 +11,7 @@ html, body {
 a {
   font-size: 1.1em !important;
 }
+
 .navbar {
   padding: .8rem;
 }
@@ -19,13 +20,10 @@ a {
   padding-right: 20px;
 }
 
-.dropdown-item {
+.dropdown-item, h1, h2 {
   text-align: center;
 }
 
-.carousel-inner {
-  height: 30em;
-}
 
 #test {
   height: 500px;
@@ -38,13 +36,9 @@ a {
     margin-left: -2em;
   }
 
-}
-
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  .carousel-inner {
+    height: 30em;
+  }
 }
 
 p {
