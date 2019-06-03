@@ -24,12 +24,23 @@ a {
 }
 
 .carousel-inner {
-  height: 600px;
+  height: 30em;
 }
 
 #test {
   height: 500px;
 }
+
+
+@media (min-width: 992px) {
+  .about-pic {
+    margin-top: 5em;
+    margin-left: -2em;
+  }
+
+}
+
+
 .carousel-caption {
   position: absolute;
   top: 50%;
