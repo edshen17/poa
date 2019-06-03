@@ -14,10 +14,10 @@ html(lang='en')
         span.navbar-toggler-icon
       #navbarNavAltMarkup.collapse.navbar-collapse
         .navbar-nav
-          a.nav-item.nav-link.active(href='/')
+          a.nav-item.nav-link(class=(title === "Home" ? "active" : undefined), href='/')
             | Home 
             span.sr-only (current)
-          a.nav-item.nav-link(href='/about-us') About Us
+          a.nav-item.nav-link(class=(title === "About Us" ? "active" : undefined), href='/about-us') About Us
           li.nav-item.dropdown
             a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
               | Day Care Program
@@ -41,10 +41,10 @@ html(lang='en')
               a.dropdown-item(href='#') Dance Program
               a.dropdown-item(href='#') Sports Program
               a.dropdown-item(href='#') Gifted &amp; Talented
-          a.nav-item.nav-link(href='/visit-a-school') Visit a School
-          a.nav-item.nav-link(href='/admissions') Admissions
-          a.nav-item.nav-link(href='/parents') Parents
-          a.nav-item.nav-link(href='/careers') Careers
+          a.nav-item.nav-link(class=(title === "Visit a School" ? "active" : undefined), href='/visit-a-school') Visit a School
+          a.nav-item.nav-link(class=(title === "Admissions" ? "active" : undefined), href='/admissions') Admissions
+          a.nav-item.nav-link(class=(title === "Parents" ? "active" : undefined), href='/parents') Parents
+          a.nav-item.nav-link(class=(title === "Careers" ? "active" : undefined), href='/careers') Careers
           
           
     block content  
