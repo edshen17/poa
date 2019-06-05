@@ -20,7 +20,7 @@ a {
   padding-right: 20px;
 }
 
-.dropdown-item, h1, h2 {
+.dropdown-item, h1, h2, .reqs {
   text-align: center;
 }
 
@@ -39,17 +39,16 @@ a {
   .carousel-inner {
     height: 30em;
   }
+
+  .infant {
+    margin-right: 5em;
+  }
 }
 
-p {
+p, .reqs {
   font-size: 1.2em;
 }
 
-.carousel-inner img {
-  mage-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}
 
 footer {
   text-align: center;
